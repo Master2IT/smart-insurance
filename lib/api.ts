@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "https://assignment.devotel.io";
-
 const api = axios.create({
-  baseURL: BASE_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   headers: {
     "Content-Type": "application/json",
   },
